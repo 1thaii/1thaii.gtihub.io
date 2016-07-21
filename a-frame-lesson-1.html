@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, Keyboard! • A-Frame</title>
+    <meta name="description" content="VRCamp">
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v1.13.0/dist/aframe-extras.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+  </head>
+  
+  <body>
+    <a-scene>
+      <a-box color="#f0f0f0" width="4" height="4" depth="3" rotation="0 45 0" position="3 2 -7" src="panda.jpg" >
+         <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+      </a-box>
+      <a-sky color="#fff0f0" src="360_image_1.jpg"</a-sky>
+       <a-entity id="sound-entity" sound="src: cry.mp3; autoplay: true"></a-entity>
+       <a-cylinder color="000000" theta-start="50" theta-length="280" side="double" position= "6 4 -14" rotation= "10 360 50" ></a-cylinder
+       >
+         <a-assets>
+    <img id="ground" src="ground.jpg">
+  </a-assets>
+  <a-plane color="#CCC" height="20" width="20"></a-plane position="2 1 1">
+    </a-scene>
+
+  </body>
+
+</html>
